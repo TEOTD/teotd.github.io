@@ -45,6 +45,8 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: $color-black;
+	letter-spacing: .2rem;
+	margin-top: .5rem;
 		
 	
 }
@@ -57,4 +59,12 @@ body {
 	&:not(:last-child){
 		margin-bottom: 3rem;
 	}
+}
+
+.skills-heading{
+	color: $color-white;
+	font-weight: 400;
+	font-family: "Lato",sans-serif;
+	letter-spacing: 1.5rem;
+	
 }

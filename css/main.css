@@ -95,7 +95,9 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000; }
+  color: #000;
+  letter-spacing: .2rem;
+  margin-top: .5rem; }
 
 .paragraph {
   font-size: 1.6rem;
@@ -104,6 +106,12 @@ body {
   line-height: 1.5; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.skills-heading {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Lato",sans-serif;
+  letter-spacing: 1.5rem; }
 
 .u-center-text {
   text-align: center; }
@@ -191,6 +199,25 @@ body {
       transform: translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
+  transition: all .3s; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  .feature-box__icons {
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: .8rem;
+    font-weight: 300; }
+  .feature-box__text {
+    color: #000;
+    margin-bottom: .5rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -252,5 +279,14 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 20rem 0 0rem;
+  margin-bottom: 0;
+  margin-top: -20vh;
+  height: 140vh; }
+
+.section-skills {
+  margin-top: 0;
+  padding: 10rem 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back2.png");
+  background-size: cover;
+  height: 110vh; }
