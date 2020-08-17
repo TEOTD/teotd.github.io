@@ -1,0 +1,36 @@
+@keyframes ani1 {
+	0% {
+		opacity: 0;
+		transform: translate(5rem);
+	}
+	50% {
+		transform: translate(-5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes ani2 {
+	0% {
+		opacity: 0;
+		transform: translate(-5rem);
+	}
+	50% {
+		transform: translate(5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes anibtnwhite {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}

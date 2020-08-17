@@ -1,3 +1,28 @@
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+    transform: translate(5rem); }
+  50% {
+    transform: translate(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes ani2 {
+  0% {
+    opacity: 0;
+    transform: translate(-5rem); }
+  50% {
+    transform: translate(5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+@keyframes anibtnwhite {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 *,
 *::after,
 *::before {
@@ -9,26 +34,15 @@ html {
   font-size: 63%; }
 
 body {
+  box-sizing: border-box; }
+
+body {
   font-family: "Lato",sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.2;
   color: #fff;
-  padding: 2rem;
-  box-sizing: border-box; }
-
-.header {
-  height: 93vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  .header__text-box {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+  padding: 2rem; }
 
 .heading-primary {
   color: #fff;
@@ -90,28 +104,15 @@ body {
   animation: anibtnwhite .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-@keyframes ani1 {
-  0% {
-    opacity: 0;
-    transform: translate(5rem); }
-  50% {
-    transform: translate(-5rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-@keyframes ani2 {
-  0% {
-    opacity: 0;
-    transform: translate(-5rem); }
-  50% {
-    transform: translate(5rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-@keyframes anibtnwhite {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+.header {
+  height: 93vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__text-box {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
