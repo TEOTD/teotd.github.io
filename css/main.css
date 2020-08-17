@@ -83,6 +83,7 @@ body {
     animation-timing-function: ease-out; }
 
 .heading-secondary {
+  margin-top: 0rem;
   color: #000;
   font-size: 4.5rem;
   text-transform: uppercase;
@@ -176,10 +177,19 @@ body {
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-.composition__photo {
-  width: 55%;
-  border-radius: 10rem;
-  margin-left: 15rem; }
+.composition {
+  position: relative;
+  transition: all .2s; }
+  .composition__photo {
+    width: 25%;
+    border-radius: 5rem;
+    margin-left: 15rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    position: absolute; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      transform: translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .row {
   max-width: 114rem;
