@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 @keyframes ani1 {
   0% {
     opacity: 0;
@@ -71,7 +88,33 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.8rem;
+  display: inline-block; }
+
+.heading-three {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
   text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -80,7 +123,8 @@ body {
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.6rem; }
 .btn__white {
   background-color: #fff;
   color: #000;
@@ -112,12 +156,83 @@ body {
   animation: anibtnwhite .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  border: 0.1rem solid #000;
+  padding-bottom: 0.4rem;
+  padding: 1rem 2rem;
+  transition: all .2s;
+  text-align: center;
+  border-radius: 10rem; }
+.btn-text:hover {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.2rem); }
+.btn-text:active {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.composition__photo {
+  width: 55%;
+  border-radius: 10rem;
+  margin-left: 15rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
 .header {
   height: 93vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
   background-size: cover;
   background-position: top;
   position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 9rem; }
   .header__text-box {
     position: absolute;
     top: 70%;

@@ -9,6 +9,7 @@
 		border-radius: 10rem;
 		transition: all .2s;
 		position: relative;
+		font-size: $default-font-size;
 		}
 
 	&__white{
@@ -51,5 +52,34 @@
 	&__animated{
 		animation: anibtnwhite .5s ease-out .75s;
 		animation-fill-mode: backwards;
+	}
+}
+
+.btn-text{
+	&:link,
+	&:visited{
+		font-size: $default-font-size;
+		text-decoration: none;
+		display: inline-block;
+		color: $color-black;
+		border: 0.1rem solid $color-black;
+		padding-bottom: 0.4rem;
+		padding: 1rem 2rem;
+		transition: all .2s;
+		text-align: center;
+		border-radius: 10rem;
+		
+	}
+	
+	&:hover{
+		background-color: $color-grey-dark-3;
+		color: $color-white;
+		box-shadow: 0 1rem 2rem rgba($color-black,0.15);
+		transform: translateY(-0.2rem);
+		
+	}
+	&:active{
+		box-shadow: 0 0.5rem 2rem rgba($color-black,0.15);
+		transform: translateY(0);
 	}
 }

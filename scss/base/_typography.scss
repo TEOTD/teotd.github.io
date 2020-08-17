@@ -1,7 +1,7 @@
 body {
 	font-family: "Lato",sans-serif;
 	font-weight: 400;
-	font-size: 1.6rem;
+	font-size: $default-font-size;
 	line-height: 1.2;
 	color: $color-white;
 	padding: 2rem;
@@ -36,5 +36,24 @@ body {
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 0.8rem;
-	text-align: center;
+	display: inline-block;
+}
+
+.heading-three{
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $color-black;
+		
+	
+}
+.paragraph{
+	font-size: $default-font-size;
+	font-weight: 400;
+	color: $color-black;
+	line-height: 1.5;
+	
+	&:not(:last-child){
+		margin-bottom: 3rem;
+	}
 }
