@@ -65,6 +65,14 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-out; }
 
+.heading-secondary {
+  color: #000;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.8rem;
+  text-align: center; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -106,7 +114,7 @@ body {
 
 .header {
   height: 93vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
+  background-image: linear-gradient(to bottom, rgba(16, 24, 32, 0.8), rgba(0, 0, 0, 0.95)), url("../img/Back.png");
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -116,3 +124,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
