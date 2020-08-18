@@ -1,0 +1,23 @@
+.education{
+	width: 75%;
+	margin: 0 auto;
+	box-shadow: 0 3rem 6rem rgba($color-white,.1);
+	background-color: rgba($color-white,.95);
+	border-radius: .3rem;
+	padding: 3rem;
+	font-size: 1.6;
+	&__logo{
+		width:15rem;
+		height:15rem;
+		float: left;
+		clip-path: circle(50% at 50% 50%);
+		-webkit-clip-path: circle(50% at 50% 50%);
+		transform: translateX(-3rem);
+		padding-left: 1rem;
+		padding-bottom: 1rem;
+	}
+	&__img{
+		height: 100%;
+		width: 100%;
+	}
+}

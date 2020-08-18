@@ -56,7 +56,9 @@ html {
   font-size: 63%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  animation-name: lazy;
+  animation-duration: 3s; }
 
 body {
   font-family: "Lato",sans-serif;
@@ -86,7 +88,6 @@ body {
     animation-name: ani2;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-
 .heading-secondary {
   margin-top: 0rem;
   color: #000;
@@ -95,7 +96,6 @@ body {
   font-weight: 600;
   letter-spacing: 0.8rem;
   display: inline-block; }
-
 .heading-three {
   font-size: 1.8rem;
   font-weight: 700;
@@ -212,7 +212,7 @@ body {
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
   transition: all .3s;
-  height: 55vh; }
+  height: 60vh; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icons {
@@ -229,9 +229,32 @@ body {
     text-align: justify;
     line-height: 3rem; }
 
+.education {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: .3rem;
+  padding: 3rem;
+  font-size: 1.6; }
+  .education__logo {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem);
+    padding-left: 1rem;
+    padding-bottom: 1rem; }
+  .education__img {
+    height: 100%;
+    width: 100%; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  .row__1 {
+    padding-bottom: 3.5rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -274,9 +297,7 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
   background-size: cover;
   background-position: top;
-  position: relative;
-  animation-name: lazy;
-  animation-duration: 5s; }
+  position: relative; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -296,10 +317,20 @@ body {
   margin-bottom: 0;
   margin-top: -20vh;
   height: 120vh; }
-
 .section-skills {
   margin-top: 0;
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
   background-size: cover;
   height: 100vh; }
+.section-projects {
+  background-color: #f7f7f7;
+  padding: 20rem 0 0rem;
+  margin-bottom: 0;
+  height: 100vh; }
+.section-education {
+  margin-top: 0;
+  padding: 5rem 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
+  background-size: cover;
+  height: 140vh; }

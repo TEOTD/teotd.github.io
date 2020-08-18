@@ -6,7 +6,8 @@ body {
 	color: $color-white;
 	padding: 2rem;
 }
-.heading-primary{
+.heading{
+ &-primary{
 	color: $color-white;
 	text-transform: uppercase;
 	margin-bottom: 3rem;
@@ -30,7 +31,7 @@ body {
 	}
 }
 
-.heading-secondary{
+  &-secondary{
 	margin-top: 0rem;
 	color: $color-black;
 	font-size: 4.5rem;
@@ -40,15 +41,16 @@ body {
 	display: inline-block;
 }
 
-.heading-three{
+  &-three{
 	font-size: 1.8rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: $color-black;
+	color: $color-black;	
 	letter-spacing: .2rem;
 	margin-top: .5rem;
 		
 	
+}
 }
 .paragraph{
 	font-size: $default-font-size;
