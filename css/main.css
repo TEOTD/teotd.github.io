@@ -200,13 +200,14 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4); }
 
 .feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
-  transition: all .3s; }
+  transition: all .3s;
+  height: 55vh; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__icons {
@@ -216,7 +217,12 @@ body {
     font-weight: 300; }
   .feature-box__text {
     color: #000;
-    margin-bottom: .5rem; }
+    margin-bottom: .5rem;
+    display: block;
+    margin-left: 1rem;
+    padding-left: 0;
+    text-align: justify;
+    line-height: 3rem; }
 
 .row {
   max-width: 114rem;
@@ -282,11 +288,11 @@ body {
   padding: 20rem 0 0rem;
   margin-bottom: 0;
   margin-top: -20vh;
-  height: 140vh; }
+  height: 120vh; }
 
 .section-skills {
   margin-top: 0;
   padding: 10rem 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back2.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
   background-size: cover;
-  height: 110vh; }
+  height: 100vh; }
