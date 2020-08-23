@@ -501,7 +501,7 @@ body {
   color: #000; }
 
 /* line 67, ../scss/layout/_navigation.scss */
-.main-nav li a:hover {
+.sticky .main-nav li a:hover {
   border-bottom: 2px solid #000; }
 
 /* line 70, ../scss/layout/_navigation.scss */
