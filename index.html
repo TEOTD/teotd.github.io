@@ -6,23 +6,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="fontawesome/css/all.css">
 	  <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+	     
+	    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+	  	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	    
+	       
     <title>Kiran Hegde</title>
   </head>
-  <body>
+  <body>	
+
+	  
     <header class="header">
-        <div class="header__logo-box">
-		<img src="img/logo-white.png" alt="Logo" class="header__logo">
-        </div>
+		<nav>
+          <div class="row">
+			  <div class="header__logo-box">
+              <img src="img/logo-white.png" alt="Travel logo" class="logo header__logo">
+			  </div>
+              <img src="img/logo-white.png" alt="Travel logo" class="logo-black header__logo">
+			
+              <ul class="main-nav js--main-nav">
+                  <li><a href="#about">About Me</a></li>
+                  <li><a href="#skills">My Skills</a></li>
+                  <li><a href="#projects">My Projects</a></li>
+                  <li><a href="#education">My Education</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
+          </div>
+      </nav>
         <div class="header__text-box">
           <h1 class="heading-primary">
           <span class="heading-primary__main">Kiran Hegde</span>
           <span class="heading-primary__sub">An enthusiastic developer </span>
           </h1>
-		  <a href="#" class="btn btn__white btn__animated">About me</a>
+		  <a href="#" class="btn btn__white btn__animated js--scroll-to-about" id="about_btn">About me</a>
         </div>
     </header>
 	  <main>
-	  <section class="section-about" >
+	  <section class="section-about js--section-about" id="about">
 		  <div class="u-center-text u-margin-bottom-big">
 		  <h2 class="heading-secondary">Let Me Introduce Myself</h2> 
 		</div>	
@@ -41,7 +63,7 @@
                 </div>
             </div>
 	  </section>
-		  <section class="section-skills">
+		  <section class="section-skills" id="skills">
 	    <div class="u-center-text u-margin-bottom-big">
 		  <h2 class="skills-heading heading-secondary">My Skills</h2> 
 		</div>
@@ -104,7 +126,7 @@
 		  	</div>
 		  </div>
 		  </section>
-		  <section class="section-projects">
+		  <section class="section-projects" id="projects">
 		    <div class="u-center-text u-margin-bottom-big">
 		  <h2 class="heading-secondary">My Projects</h2> 
 		</div>
@@ -121,7 +143,7 @@
                 </div>
             </div>  
 		  </section>
-		  <section class="section-education">
+		  <section class="section-education" id="education">
 		    <div class="u-center-text u-margin-bottom-big">
 		  <h2 class="skills-heading heading-secondary">My Education</h2> 
 		</div>
@@ -158,9 +180,9 @@
 				  </div>
 			  </div>
 			  </div>
-			  <div class="u-center-text u-margin-bottom-small"><a href="#" class="btn btn__white btn__animated">Learn More</a></div>
+			  <div class="u-center-text u-margin-bottom-small"><a href="#popup" class="btn btn__white btn__animated">Learn More</a></div>
 			</section>
-		  <section class="section-contact__me">
+		  <section class="section-contact__me" id="contact">
 		  <div class="row">
 			<div class="contact">
 			  <div class="contact__me">
@@ -196,6 +218,8 @@
                     </h3>
                 </div>
               </footer>
+	  
+	  
 	  <!--
         <section class="grid-test">
             <div class="row">

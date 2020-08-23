@@ -115,3 +115,24 @@
 	
 }
 
+.btn-text__2{
+	&:link,
+	&:visited{				
+		padding-bottom: 0.2rem;
+		padding: 1rem 0rem;
+		transition: all 2s;
+		text-align: center;
+}
+	
+	&:hover{
+		padding: 1rem 0rem;
+		border-bottom: 0.1rem solid $color-white;
+		transform: translateY(-20rem);
+		
+	}
+	&:active{
+		transform: translateY(0);
+	}
+	
+}
+
