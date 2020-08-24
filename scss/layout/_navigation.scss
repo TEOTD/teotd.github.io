@@ -52,6 +52,9 @@
 	padding-top: 2rem;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
+	animation-name: lazy;
+	animation-duration: .5s;
+	animation-timing-function: ease-out;
 }
 
 .sticky .main-nav { margin-top: 18px; }
