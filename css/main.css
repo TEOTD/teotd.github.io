@@ -576,7 +576,7 @@ body {
 /* line 1, ../scss/layout/_header.scss */
 .header {
   height: 93vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../img/Back.png");
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -698,39 +698,40 @@ body {
 .section-skills {
   margin-top: 0;
   padding: 5rem 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back4.jpg");
   background-size: cover;
   height: 100vh; }
 /* line 21, ../scss/pages/_home.scss */
 .section-projects {
   background-color: #f7f7f7;
   padding: 10rem 0 0rem;
-  margin-bottom: 0;
-  height: 150vh; }
-/* line 30, ../scss/pages/_home.scss */
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  height: 160vh; }
+/* line 31, ../scss/pages/_home.scss */
 .section-education {
   margin-top: 0;
   padding: 5rem 0;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
   background-size: cover;
   height: 140vh; }
-/* line 38, ../scss/pages/_home.scss */
+/* line 39, ../scss/pages/_home.scss */
 .section-contact__me {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #f7f7f7, #eeeeee); }
 
-/* line 46, ../scss/pages/_home.scss */
+/* line 47, ../scss/pages/_home.scss */
 .contact {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/Back2.jpg");
   background-size: cover;
   height: 40rem;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
-  /* line 52, ../scss/pages/_home.scss */
+  /* line 53, ../scss/pages/_home.scss */
   .contact__me {
     width: 50%;
     padding: 6rem; }
-    /* line 56, ../scss/pages/_home.scss */
+    /* line 57, ../scss/pages/_home.scss */
     .contact__me__para {
       display: inline-block;
       font-size: 1.6rem;
@@ -738,7 +739,7 @@ body {
       text-align: center;
       text-decoration: none;
       color: #000; }
-    /* line 67, ../scss/pages/_home.scss */
+    /* line 68, ../scss/pages/_home.scss */
     .contact__me__logo {
       font-size: 3rem;
       color: #333;
