@@ -74,7 +74,10 @@ body {
 	color: $color-black;
 	line-height: 1.5;
 	
-	
+	  @include respond(tab-port) {
+		  font-size: 2rem;
+}
+
 	&:not(:last-child){
 		margin-bottom: 3rem;
 	}

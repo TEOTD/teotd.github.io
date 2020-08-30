@@ -7,20 +7,20 @@
 	margin-bottom: 0;
     margin-top: -20vh;
 	height: 120vh;
-	
-	    @include respond(tab-port) {
-       
-		align-items: center;
-		height: 100vh;
+	@include respond(tab-port) {
+    	align-items: center;
+		padding-top: 7rem;
+		margin-top: 2rem;
+		height: 75vh;
     }
 
 	
 	@include respond(phone) {
 		align-items: center;
 		
-		padding-top: 5rem;
-		margin-top: .5rem;
-		height: 90vh;
+		padding-top: 7rem;
+		margin-top: 2rem;
+		height: 75vh;
     }
 	
 }
@@ -39,7 +39,7 @@
     }
 	
 	@include respond(phone) {
-		height: 300vh;
+		height: 280vh;
 
     }
 	

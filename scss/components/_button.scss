@@ -69,6 +69,14 @@
 		text-align: center;
 		border-radius: 10rem;
 		
+		  @include respond(tab-port) {
+			transform: translateX(11rem);
+        }
+		
+		 @include respond(phone) {
+			transform: translateX(9rem);
+		
+	}
 	}
 	
 	&:hover{

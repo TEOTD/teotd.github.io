@@ -2,7 +2,6 @@
 	position: relative;
 	transition: all .2s;
 	
-	
 	&__photo{
 		width: 25%;
 		border-radius: 5rem;
@@ -13,8 +12,17 @@
 		    @include respond(tab-port) {
             float: left;
             position: relative;
-            width: 33.33333333%;
+            width: 50%;
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+			transform: translateX(-5rem);
+        }
+		
+		 @include respond(phone) {
+            float: left;
+            position: relative;
+            width: 40%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+			transform: translateX(-3rem);
         }
 		
 		
