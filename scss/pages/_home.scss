@@ -7,7 +7,24 @@
 	margin-bottom: 0;
     margin-top: -20vh;
 	height: 120vh;
+	
+	    @include respond(tab-port) {
+       
+		align-items: center;
+		height: 100vh;
+    }
+
+	
+	@include respond(phone) {
+		align-items: center;
+		
+		padding-top: 5rem;
+		margin-top: .5rem;
+		height: 90vh;
+    }
+	
 }
+
 
 &-skills{
 	margin-top: 0;
@@ -15,6 +32,17 @@
 	background-image: linear-gradient(to bottom,rgba($color-black,0.5),rgba($color-black,0.7)), url("../img/Back4.jpg");
 	background-size: cover;
 	height: 100vh;
+	
+	    @include respond(tab-port) {
+        padding: 10rem 0;
+		height: 300vh;
+    }
+	
+	@include respond(phone) {
+		height: 300vh;
+
+    }
+	
 	
 }
 
@@ -26,6 +54,15 @@
 	padding-bottom: 1rem;
 	height: 160vh;
 	
+	    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+		height: 340vh;
+    }
+		
+	@include respond(phone) {
+		height: 340vh;
+
+    }
 }
 
 &-education{
@@ -34,6 +71,16 @@
 	background-image: linear-gradient(to bottom,rgba($color-black,0.5),rgba($color-black,0.7)), url("../img/Back3.png");
 	background-size: cover;
 	height: 140vh;
+	
+	   	@include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+		height: 300vh;
+    }
+		
+	@include respond(phone) {
+		height: 265vh;
+
+    }
 		
 	}
 &-contact__me{
@@ -41,7 +88,9 @@
 	    background-image: linear-gradient(to right bottom ,
 			rgba($color-grey-light-1,1),rgba($color-grey-light-2,1));
 		
-	
+		    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 	}
 	}
 .contact{
@@ -50,6 +99,25 @@
 	height: 40rem;
 	border-radius: .3rem;
 	box-shadow: 0 1.5rem 4rem rgba($color-black,.35);
+	
+	 @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%) ,
+url(../img/Back2.jpg);
+        background-size: cover;
+    }
+	
+
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+url(../img/Back2.jpg);
+    }
+	
 	&__me {
 		width: 50%;
 		padding: 6rem;

@@ -1,10 +1,6 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
-	
-	&__1{
-		padding-bottom: 3.5rem;
-	}
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;

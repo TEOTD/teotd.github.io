@@ -6,15 +6,30 @@
 	background-position: top;
 	position: relative;
 	
+	@include respond(tab-port) {
+		height: 90vh;
+
+    }
+	
+	@include respond(phone) {
+		
+		height: 90vh;
+
+        }
+	
 	&__logo-box{
 		position: absolute;
 		top: 4rem;
 		left: 4rem;
 		float: left;
 		
+
+		
 	}
 	&__logo{
 		height: 9rem;
+		
+			
 	}
 	&__text-box{
 		position: absolute;
@@ -22,7 +37,14 @@
 		left:50%;
 		transform: translate(-50%,-50%);
 		text-align: center;
-	}
+		
+	
+	@include respond(phone) {
+		padding-bottom: 2rem;
+
+
+    }
+}
 	
 	
 }

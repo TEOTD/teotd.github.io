@@ -10,6 +10,13 @@
 		box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 		position: absolute;
 		
+		    @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+		
 		
 		&:hover{
 		transform: scale(1.05);
