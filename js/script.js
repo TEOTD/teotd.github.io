@@ -19,6 +19,16 @@ $(document).ready(function () {
     }, 1000);
   });
 
+  $('.js--scroll-to-popup').click(function () {
+    document.querySelector('.popup').style.opacity = '1';
+    document.querySelector('.popup').style.visibility = 'visible';
+  });
+
+  $('.popup__close').click(function () {
+    document.querySelector('.popup').style.opacity = '0';
+    document.querySelector('.popup').style.visibility = 'hidden';
+  });
+
 
   /* Navigation scroll */
   $(function () {
