@@ -35,7 +35,7 @@
 	
 	    @include respond(tab-port) {
         padding: 10rem 0;
-		height: 300vh;
+		height: 280vh;
     }
 	
 	@include respond(phone) {
@@ -56,11 +56,12 @@
 	
 	    @include respond(tab-port) {
         padding: 20rem 0 10rem 0;
-		height: 340vh;
+		height: 210vh;
     }
 		
 	@include respond(phone) {
-		height: 340vh;
+		padding-top: 10rem;
+		height: 260vh;
 
     }
 }
@@ -74,11 +75,12 @@
 	
 	   	@include respond(tab-port) {
         padding: 20rem 0 10rem 0;
-		height: 300vh;
+		height: 140vh;
     }
 		
 	@include respond(phone) {
-		height: 265vh;
+		height: 330vh;
+		padding-top: 10rem;
 
     }
 		

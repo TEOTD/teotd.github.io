@@ -9,6 +9,8 @@
     opacity: 0;
     visibility:hidden;
     transition: all .3s;
+	
+
 
 		
 		
@@ -29,6 +31,18 @@
 		display: block;
 		width:100%;
 		
+   @include respond(tab-port) {
+	   height: 70rem;
+	   width: 30rem;;
+        
+    }
+		
+	@include respond(phone) {
+		display: none;
+
+    }
+
+		
 	}
 	&__left{
         width: 33.333333%;
@@ -40,6 +54,16 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+		
+    @include respond(tab-port) {
+	   padding-top: 10rem;
+        
+    }
+		
+	@include respond(phone) {
+		
+
+    }
 		
 	}
 	&__close {
@@ -79,6 +103,8 @@
 		text-align: justify;
 		color: $color-black;
 		line-height: 3rem;
+		
+
 		
 	}
 	&__head{

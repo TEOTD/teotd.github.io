@@ -55,6 +55,18 @@
 	}
 }
 
+.center_btn{
+	 @include respond(tab-port) {
+		 text-align: center !important;
+        }
+		
+	@include respond(phone) {
+		text-align: center !important;
+
+    }
+	
+}
+
 .btn-text{
 	&:link,
 	&:visited{
@@ -69,14 +81,7 @@
 		text-align: center;
 		border-radius: 10rem;
 		
-		  @include respond(tab-port) {
-			transform: translateX(11rem);
-        }
-		
-		 @include respond(phone) {
-			transform: translateX(9rem);
-		
-	}
+		 
 	}
 	
 	&:hover{
@@ -85,10 +90,12 @@
 		box-shadow: 0 1rem 2rem rgba($color-black,0.15);
 		transform: translateY(-0.2rem);
 		
+		
 	}
 	&:active{
 		box-shadow: 0 0.5rem 2rem rgba($color-black,0.15);
 		transform: translateY(0);
+		
 	}
 	
 }
@@ -107,6 +114,8 @@
 		text-align: center;
 		border-right: 0.1rem solid $color-black;
 		border-radius: 10rem;
+		
+		
 		
 	}
 	
@@ -130,6 +139,7 @@
 		padding: 1rem 0rem;
 		transition: all 2s;
 		text-align: center;
+		
 }
 	
 	&:hover{
