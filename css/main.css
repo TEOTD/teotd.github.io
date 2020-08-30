@@ -56,11 +56,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 /* line 9, ../scss/base/_base.scss */
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 75em) {
     /* line 9, ../scss/base/_base.scss */
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 9, ../scss/base/_base.scss */
     html {
       font-size: 50%; } }
@@ -74,7 +74,7 @@ body {
   box-sizing: border-box;
   animation-name: lazy;
   animation-duration: 3s; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 26, ../scss/base/_base.scss */
     body {
       padding: 0; } }
@@ -102,7 +102,7 @@ body {
     animation-name: ani1;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (min-width: 37.5em) {
       /* line 14, ../scss/base/_typography.scss */
       .heading-primary__main {
         letter-spacing: 1rem;
@@ -116,7 +116,7 @@ body {
     animation-name: ani2;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (min-width: 37.5em) {
       /* line 27, ../scss/base/_typography.scss */
       .heading-primary__sub {
         letter-spacing: .5rem; } }
@@ -129,11 +129,11 @@ body {
   font-weight: 600;
   letter-spacing: 0.8rem;
   display: inline-block; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 42, ../scss/base/_typography.scss */
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 42, ../scss/base/_typography.scss */
     .heading-secondary {
       font-size: 2.5rem; } }
@@ -175,12 +175,12 @@ body {
 .u-center-text__1 {
   text-align: center;
   margin-right: 35rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 2, ../scss/base/_utilities.scss */
     .u-center-text__1 {
       text-align: center;
       margin-right: 0; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 2, ../scss/base/_utilities.scss */
     .u-center-text__1 {
       text-align: center;
@@ -190,12 +190,12 @@ body {
 .u-center-text__2 {
   text-align: center;
   margin-right: 0; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 20, ../scss/base/_utilities.scss */
     .u-center-text__2 {
       text-align: center;
       margin-left: 2rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 20, ../scss/base/_utilities.scss */
     .u-center-text__2 {
       text-align: center;
@@ -208,7 +208,7 @@ body {
 /* line 39, ../scss/base/_utilities.scss */
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 39, ../scss/base/_utilities.scss */
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
@@ -216,7 +216,7 @@ body {
 /* line 47, ../scss/base/_utilities.scss */
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 47, ../scss/base/_utilities.scss */
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
@@ -506,7 +506,7 @@ body {
     margin-left: 15rem;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: absolute; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 6, ../scss/components/_composition.scss */
       .composition__photo {
         float: left;
@@ -529,7 +529,7 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
   transition: all .3s;
   height: 60vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 1, ../scss/components/_feature-box.scss */
     .feature-box {
       padding: 2rem; } }
@@ -543,7 +543,7 @@ body {
     color: #333;
     margin-bottom: .8rem;
     font-weight: 300; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 20, ../scss/components/_feature-box.scss */
       .feature-box__icons {
         margin-bottom: 0; } }
@@ -641,11 +641,11 @@ body {
   padding: 3rem;
   margin-bottom: 3rem;
   font-size: 1.6; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 1, ../scss/components/_edu.scss */
     .education {
       padding: 10rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 1, ../scss/components/_edu.scss */
     .education {
       padding: 10rem; } }
@@ -681,7 +681,7 @@ body {
 .footer {
   background-color: #333;
   padding: 10rem 0; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 1, ../scss/layout/_footer.scss */
     .footer {
       padding: 8rem 0; } }
@@ -689,7 +689,7 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 7, ../scss/layout/_footer.scss */
       .footer__logo-box {
         margin-bottom: 6rem; } }
@@ -702,7 +702,7 @@ body {
     text-align: center;
     color: #fff;
     letter-spacing: 1rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 19, ../scss/layout/_footer.scss */
       .footer__end {
         width: 100%;
@@ -715,11 +715,11 @@ body {
   /* line 5, ../scss/layout/_grid.scss */
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 5, ../scss/layout/_grid.scss */
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 1, ../scss/layout/_grid.scss */
     .row {
       max-width: 50rem;
@@ -735,12 +735,12 @@ body {
     /* line 23, ../scss/layout/_grid.scss */
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
+      @media only screen and (min-width: 56.25em) {
         /* line 23, ../scss/layout/_grid.scss */
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (min-width: 56.25em) {
       /* line 20, ../scss/layout/_grid.scss */
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -770,14 +770,14 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 1, ../scss/layout/_header.scss */
     .header {
-      height: 90vh; } }
-  @media only screen and (max-width: 37.5em) {
+      height: 85vh; } }
+  @media only screen and (min-width: 37.5em) {
     /* line 1, ../scss/layout/_header.scss */
     .header {
-      height: 90vh; } }
+      height: 85vh; } }
   /* line 20, ../scss/layout/_header.scss */
   .header__logo-box {
     position: absolute;
@@ -794,7 +794,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (min-width: 37.5em) {
       /* line 34, ../scss/layout/_header.scss */
       .header__text-box {
         padding-bottom: 2rem; } }
@@ -896,12 +896,12 @@ body {
   margin-bottom: 0;
   margin-top: -20vh;
   height: 120vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 3, ../scss/pages/_home.scss */
     .section-about {
       align-items: center;
       height: 100vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 3, ../scss/pages/_home.scss */
     .section-about {
       align-items: center;
@@ -915,12 +915,12 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back4.jpg");
   background-size: cover;
   height: 100vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 29, ../scss/pages/_home.scss */
     .section-skills {
       padding: 10rem 0;
       height: 300vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 29, ../scss/pages/_home.scss */
     .section-skills {
       height: 300vh; } }
@@ -931,12 +931,12 @@ body {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   height: 160vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 49, ../scss/pages/_home.scss */
     .section-projects {
       padding: 20rem 0 10rem 0;
       height: 340vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 49, ../scss/pages/_home.scss */
     .section-projects {
       height: 340vh; } }
@@ -947,12 +947,12 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
   background-size: cover;
   height: 140vh; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 68, ../scss/pages/_home.scss */
     .section-education {
       padding: 20rem 0 10rem 0;
       height: 300vh; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-width: 37.5em) {
     /* line 68, ../scss/pages/_home.scss */
     .section-education {
       height: 265vh; } }
@@ -960,7 +960,7 @@ body {
 .section-contact__me {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #f7f7f7, #eeeeee); }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 86, ../scss/pages/_home.scss */
     .section-contact__me {
       padding: 10rem 0; } }
@@ -972,12 +972,12 @@ body {
   height: 40rem;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (min-width: 75em) {
     /* line 96, ../scss/pages/_home.scss */
     .contact {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/Back2.jpg);
       background-size: cover; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (min-width: 56.25em) {
     /* line 96, ../scss/pages/_home.scss */
     .contact {
       background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/Back2.jpg); } }

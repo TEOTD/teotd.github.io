@@ -7,13 +7,13 @@
 	position: relative;
 	
 	@include respond(tab-port) {
-		height: 90vh;
+		height: 85vh;
 
     }
 	
 	@include respond(phone) {
 		
-		height: 90vh;
+		height: 85vh;
 
         }
 	
