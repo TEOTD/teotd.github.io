@@ -325,28 +325,28 @@ body {
   text-align: center;
   border-right: 0.1rem solid #000;
   border-radius: 10rem; }
-/* line 122, ../scss/components/_button.scss */
+/* line 120, ../scss/components/_button.scss */
 .btn-text__1:hover {
   padding: 1rem 2rem;
   border-radius: 10rem;
   border: 0.1rem solid #000;
   transform: translateY(-0.2rem); }
-/* line 129, ../scss/components/_button.scss */
+/* line 127, ../scss/components/_button.scss */
 .btn-text__1:active {
   transform: translateY(0); }
 
-/* line 136, ../scss/components/_button.scss */
+/* line 134, ../scss/components/_button.scss */
 .btn-text__2:link, .btn-text__2:visited {
   padding-bottom: 0.2rem;
   padding: 1rem 0rem;
   transition: all 2s;
   text-align: center; }
-/* line 145, ../scss/components/_button.scss */
+/* line 143, ../scss/components/_button.scss */
 .btn-text__2:hover {
   padding: 1rem 0rem;
   border-bottom: 0.1rem solid #fff;
   transform: translateY(-20rem); }
-/* line 151, ../scss/components/_button.scss */
+/* line 149, ../scss/components/_button.scss */
 .btn-text__2:active {
   transform: translateY(0); }
 
@@ -539,6 +539,14 @@ body {
       transform: scale(1.05);
       transform: translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4); }
+      @media only screen and (max-width: 56.25em) {
+        /* line 29, ../scss/components/_composition.scss */
+        .composition__photo:hover {
+          transform: translateX(-5rem); } }
+      @media only screen and (max-width: 37.5em) {
+        /* line 29, ../scss/components/_composition.scss */
+        .composition__photo:hover {
+          transform: translateX(-3rem); } }
 
 /* line 1, ../scss/components/_feature-box.scss */
 .feature-box {
@@ -1090,38 +1098,50 @@ body {
   @media only screen and (max-width: 37.5em) {
     /* line 69, ../scss/pages/_home.scss */
     .section-education {
-      height: 330vh;
+      height: 250vh;
       padding-top: 10rem; } }
 /* line 88, ../scss/pages/_home.scss */
 .section-contact__me {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #f7f7f7, #eeeeee); }
-  @media only screen and (max-width: 56.25em) {
-    /* line 88, ../scss/pages/_home.scss */
-    .section-contact__me {
-      padding: 10rem 0; } }
 
-/* line 98, ../scss/pages/_home.scss */
+/* line 95, ../scss/pages/_home.scss */
 .contact {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/Back2.jpg");
   background-size: cover;
   height: 40rem;
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
-  @media only screen and (min-width: 75em) {
-    /* line 98, ../scss/pages/_home.scss */
-    .contact {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/Back2.jpg);
-      background-size: cover; } }
   @media only screen and (max-width: 56.25em) {
-    /* line 98, ../scss/pages/_home.scss */
+    /* line 95, ../scss/pages/_home.scss */
     .contact {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/Back2.jpg); } }
-  /* line 123, ../scss/pages/_home.scss */
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../img/Back2.jpg");
+      height: 30rem;
+      width: auto; } }
+  @media only screen and (max-width: 37.5em) {
+    /* line 95, ../scss/pages/_home.scss */
+    .contact {
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../img/Back2.jpg");
+      height: 30rem; } }
+  /* line 113, ../scss/pages/_home.scss */
   .contact__me {
     width: 50%;
     padding: 6rem; }
-    /* line 127, ../scss/pages/_home.scss */
+    @media only screen and (max-width: 37.5em) {
+      /* line 113, ../scss/pages/_home.scss */
+      .contact__me {
+        padding: 0;
+        margin: 0;
+        transform: translateY(-17rem);
+        width: 100%; } }
+    @media only screen and (max-width: 56.25em) {
+      /* line 113, ../scss/pages/_home.scss */
+      .contact__me {
+        padding: 0;
+        margin: 0;
+        transform: translateY(2rem);
+        width: 100%; } }
+    /* line 131, ../scss/pages/_home.scss */
     .contact__me__para {
       display: inline-block;
       font-size: 1.6rem;
@@ -1129,7 +1149,15 @@ body {
       text-align: center;
       text-decoration: none;
       color: #000; }
-    /* line 138, ../scss/pages/_home.scss */
+      @media only screen and (max-width: 37.5em) {
+        /* line 131, ../scss/pages/_home.scss */
+        .contact__me__para {
+          display: none; } }
+      @media only screen and (max-width: 56.25em) {
+        /* line 131, ../scss/pages/_home.scss */
+        .contact__me__para {
+          display: none; } }
+    /* line 148, ../scss/pages/_home.scss */
     .contact__me__logo {
       font-size: 3rem;
       color: #333;

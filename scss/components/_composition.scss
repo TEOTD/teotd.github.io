@@ -30,6 +30,14 @@
 		transform: scale(1.05);
 		transform: translateY(-0.5rem);
 		box-shadow: 0 2.5rem 4rem rgba($color-black, .4);
+			
+		@include respond(tab-port) {
+			transform: translateX(-5rem);
+        }
+		
+		 @include respond(phone) {
+			transform: translateX(-3rem);
+        }
 	    
 	}
 	
