@@ -1098,7 +1098,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     /* line 69, ../scss/pages/_home.scss */
     .section-education {
-      height: 250vh;
+      height: 280vh;
       padding-top: 10rem; } }
 /* line 88, ../scss/pages/_home.scss */
 .section-contact__me {
