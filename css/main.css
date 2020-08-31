@@ -1113,12 +1113,17 @@ body {
     .section-education {
       height: 280vh;
       padding-top: 10rem; } }
-/* line 88, ../scss/pages/_home.scss */
+  @media only screen and (max-width: 37.5em) and (max-width: 400px) {
+    /* line 69, ../scss/pages/_home.scss */
+    .section-education {
+      height: 330vh; } }
+
+/* line 90, ../scss/pages/_home.scss */
 .section-contact__me {
   padding: 10rem 0;
   background-image: linear-gradient(to right bottom, #f7f7f7, #eeeeee); }
 
-/* line 95, ../scss/pages/_home.scss */
+/* line 97, ../scss/pages/_home.scss */
 .contact {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/Back2.jpg");
   background-size: cover;
@@ -1126,35 +1131,35 @@ body {
   border-radius: .3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.35); }
   @media only screen and (max-width: 56.25em) {
-    /* line 95, ../scss/pages/_home.scss */
+    /* line 97, ../scss/pages/_home.scss */
     .contact {
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../img/Back2.jpg");
       height: 30rem;
       width: auto; } }
   @media only screen and (max-width: 37.5em) {
-    /* line 95, ../scss/pages/_home.scss */
+    /* line 97, ../scss/pages/_home.scss */
     .contact {
       background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, transparent 50%), url("../img/Back2.jpg");
       height: 30rem; } }
-  /* line 113, ../scss/pages/_home.scss */
+  /* line 115, ../scss/pages/_home.scss */
   .contact__me {
     width: 50%;
     padding: 6rem; }
     @media only screen and (max-width: 37.5em) {
-      /* line 113, ../scss/pages/_home.scss */
+      /* line 115, ../scss/pages/_home.scss */
       .contact__me {
         padding: 0;
         margin: 0;
         transform: translateY(-17rem);
         width: 100%; } }
     @media only screen and (max-width: 56.25em) {
-      /* line 113, ../scss/pages/_home.scss */
+      /* line 115, ../scss/pages/_home.scss */
       .contact__me {
         padding: 0;
         margin: 0;
         transform: translateY(2rem);
         width: 100%; } }
-    /* line 131, ../scss/pages/_home.scss */
+    /* line 133, ../scss/pages/_home.scss */
     .contact__me__para {
       display: inline-block;
       font-size: 1.6rem;
@@ -1163,14 +1168,14 @@ body {
       text-decoration: none;
       color: #000; }
       @media only screen and (max-width: 37.5em) {
-        /* line 131, ../scss/pages/_home.scss */
+        /* line 133, ../scss/pages/_home.scss */
         .contact__me__para {
           display: none; } }
       @media only screen and (max-width: 56.25em) {
-        /* line 131, ../scss/pages/_home.scss */
+        /* line 133, ../scss/pages/_home.scss */
         .contact__me__para {
           display: none; } }
-    /* line 148, ../scss/pages/_home.scss */
+    /* line 150, ../scss/pages/_home.scss */
     .contact__me__logo {
       font-size: 3rem;
       color: #333;
