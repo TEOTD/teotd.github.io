@@ -1,28 +1,27 @@
 .composition{
 	position: relative;
-	transition: all .2s;
 	
 	&__photo{
 		width: 25%;
 		border-radius: 5rem;
-		margin-left: 15rem;
 		box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
 		position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+		right: 10%;
 		
-		    @include respond(tab-port) {
-            float: left;
+        @include respond(tab-port) {
+			left: 35%;
             position: relative;
-            width: 50%;
+            width: 33.33333333%;
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
-			transform: translateX(-5rem);
         }
 		
 		 @include respond(phone) {
-            float: left;
             position: relative;
-            width: 40%;
+            width: 33.33333333%;
             box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
-			transform: translateX(-3rem);
         }
 		
 		
@@ -31,12 +30,17 @@
 		transform: translateY(-0.5rem);
 		box-shadow: 0 2.5rem 4rem rgba($color-black, .4);
 			
-		@include respond(tab-port) {
-			transform: translateX(-5rem);
+        @include respond(tab-port) {
+			left: 35%;
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 		
 		 @include respond(phone) {
-			transform: translateX(-3rem);
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
         }
 	    
 	}

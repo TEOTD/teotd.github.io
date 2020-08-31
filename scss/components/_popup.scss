@@ -23,6 +23,8 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+		transform: translate(-50%, -50%);
+        transition: all .5s .2s;
 
 		
 	}
@@ -32,13 +34,21 @@
 		width:100%;
 		
    @include respond(tab-port) {
-	   height: 70rem;
-	   width: 30rem;;
+	   height: 60rem;
+	   width: 35rem;;
+        
+    }
+		
+    @include respond(tab-land) {
+	   height: 60rem;
+	   width: 35rem;;
         
     }
 		
 	@include respond(phone) {
 		display: none;
+		visibility: hidden;
+		opacity: 0;
 
     }
 
@@ -54,6 +64,7 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+	}
 		
     @include respond(tab-port) {
 	   padding-top: 10rem;
@@ -62,10 +73,22 @@
 		
 	@include respond(phone) {
 		
+	&__left{
+        width: 0%;
+        display: table-cell;
+		
+	}
+	&__right{
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+		padding-top: 7rem;
+	}
+    
 
     }
 		
-	}
 	&__close {
         &:link,
         &:visited {

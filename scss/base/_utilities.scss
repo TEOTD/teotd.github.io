@@ -1,20 +1,10 @@
 .u-center-text { text-align: center !important; }
-.u-center-text__1 { 
-
-text-align: center; 
-margin-right: 35rem;
-
-	@include respond(tab-port) {
+.u-center-text__1{
+	    padding-top: 3rem;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,-50%);
 		text-align: center;
-		margin-right: 0;
-        
-    }
-	
-	 @include respond(phone) {
-     text-align: center;
-	 margin-right: 0;
-        
-    }
 }
 
 .u-center-text__2 { 

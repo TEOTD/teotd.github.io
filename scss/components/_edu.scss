@@ -3,15 +3,16 @@
 	margin: 0 auto;
 	box-shadow: 0 3rem 6rem rgba($color-white,.1);
 	background-color: rgba($color-white,.95);
-	border-top-left-radius: 10rem;
-	border-bottom-right-radius: 10rem;
-	padding: 3rem;
+	border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
 	margin-bottom: 3rem;
-	font-size: 1.6;
 	
-	 @include respond(tab-port) {
-	padding: 10rem;
-        
+    @include respond(tab-port) {
+        width: 80%;
+        padding: 4rem;
+        padding-left: 7rem;
     }
 	
 	 @include respond(phone) {
