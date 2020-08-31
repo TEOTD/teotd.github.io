@@ -4,10 +4,17 @@
 	@include respond(tab-port) {
         padding: 8rem 0;
     }
+	
+   @include respond(phone) {
+        padding: 8rem 2rem;
+    }
 	&__logo-box{
 		text-align: center;
 		margin-bottom: 8rem;
 		 @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
+		@include respond(phone) {
             margin-bottom: 6rem;
         }
 		
@@ -22,6 +29,10 @@
 		letter-spacing: 1rem;
 		
         @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+		@include respond(phone) {
             width: 100%;
             text-align: center;
         }
