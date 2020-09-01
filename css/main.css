@@ -910,18 +910,15 @@ body {
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 55px; }
-  @media only screen and (max-width: 75em) {
-    /* line 1, ../scss/layout/_navigation.scss */
-    .main-nav {
-      margin-right: 5rem; } }
+  margin-top: 55px;
+  margin-right: 10rem; }
 
-/* line 11, ../scss/layout/_navigation.scss */
+/* line 9, ../scss/layout/_navigation.scss */
 .main-nav li {
   display: inline-block;
   margin-left: 40px; }
 
-/* line 17, ../scss/layout/_navigation.scss */
+/* line 15, ../scss/layout/_navigation.scss */
 .main-nav li a:link,
 .main-nav li a:visited {
   padding: 8px 0;
@@ -933,22 +930,22 @@ body {
   -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s; }
 
-/* line 30, ../scss/layout/_navigation.scss */
+/* line 28, ../scss/layout/_navigation.scss */
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #fff; }
 
 /* Mobile navi */
 @media only screen and (max-width: 37.5em) {
-  /* line 42, ../scss/layout/_navigation.scss */
+  /* line 40, ../scss/layout/_navigation.scss */
   .main-nav {
     display: none; }
 
-  /* line 43, ../scss/layout/_navigation.scss */
+  /* line 41, ../scss/layout/_navigation.scss */
   .mobile-nav-icon {
     display: inline-block; }
 
-  /* line 45, ../scss/layout/_navigation.scss */
+  /* line 43, ../scss/layout/_navigation.scss */
   .main-nav {
     float: left;
     margin-top: 30px;
@@ -956,11 +953,11 @@ body {
     text-align: center;
     padding-left: 7rem; }
 
-  /* line 53, ../scss/layout/_navigation.scss */
+  /* line 51, ../scss/layout/_navigation.scss */
   .main-nav li {
     display: block; }
 
-  /* line 57, ../scss/layout/_navigation.scss */
+  /* line 55, ../scss/layout/_navigation.scss */
   .main-nav li a:link,
   .main-nav li a:visited {
     display: block;
@@ -968,60 +965,45 @@ body {
     padding: 10px 0;
     font-size: 100%; }
 
-  /* line 65, ../scss/layout/_navigation.scss */
+  /* line 63, ../scss/layout/_navigation.scss */
   .sticky .main-nav {
     margin-top: 10px; }
 
-  /* line 67, ../scss/layout/_navigation.scss */
+  /* line 65, ../scss/layout/_navigation.scss */
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
     padding: 10px 0; }
 
-  /* line 69, ../scss/layout/_navigation.scss */
+  /* line 67, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon {
     margin-top: 10px; }
 
-  /* line 70, ../scss/layout/_navigation.scss */
+  /* line 68, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon i {
     color: #555; } }
-/* line 74, ../scss/layout/_navigation.scss */
+/* line 72, ../scss/layout/_navigation.scss */
 .mobile-nav-icon {
   float: right;
   margin-top: 30px;
   cursor: pointer;
-  display: none; }
-  @media only screen and (max-width: 56.25em) {
-    /* line 74, ../scss/layout/_navigation.scss */
-    .mobile-nav-icon {
-      transform: translateX(17rem); } }
-  @media only screen and (max-width: 37.5em) {
-    /* line 74, ../scss/layout/_navigation.scss */
-    .mobile-nav-icon {
-      transform: translateX(0); } }
-  @media only screen and (max-height: 420px) {
-    /* line 74, ../scss/layout/_navigation.scss */
-    .mobile-nav-icon {
-      transform: translateX(20rem); } }
-  @media only screen and (max-height: 360px) {
-    /* line 74, ../scss/layout/_navigation.scss */
-    .mobile-nav-icon {
-      transform: translateX(12rem); } }
+  display: none;
+  margin-right: 5rem; }
 
-/* line 98, ../scss/layout/_navigation.scss */
+/* line 80, ../scss/layout/_navigation.scss */
 .mobile-nav-icon i {
   font-size: 200%;
   color: #fff; }
 
 @media only screen and (max-width: 56.25em) {
-  /* line 108, ../scss/layout/_navigation.scss */
+  /* line 90, ../scss/layout/_navigation.scss */
   .main-nav {
     display: none; }
 
-  /* line 109, ../scss/layout/_navigation.scss */
+  /* line 91, ../scss/layout/_navigation.scss */
   .mobile-nav-icon {
     display: inline-block; }
 
-  /* line 111, ../scss/layout/_navigation.scss */
+  /* line 93, ../scss/layout/_navigation.scss */
   .main-nav {
     float: left;
     margin-top: 3rem;
@@ -1029,11 +1011,11 @@ body {
     text-align: center;
     padding-left: 7rem; }
 
-  /* line 119, ../scss/layout/_navigation.scss */
+  /* line 101, ../scss/layout/_navigation.scss */
   .main-nav li {
     display: block; }
 
-  /* line 123, ../scss/layout/_navigation.scss */
+  /* line 105, ../scss/layout/_navigation.scss */
   .main-nav li a:link,
   .main-nav li a:visited {
     display: block;
@@ -1041,24 +1023,24 @@ body {
     padding: 10px 0;
     font-size: 100%; }
 
-  /* line 131, ../scss/layout/_navigation.scss */
+  /* line 113, ../scss/layout/_navigation.scss */
   .sticky .main-nav {
     margin-top: 10px; }
 
-  /* line 133, ../scss/layout/_navigation.scss */
+  /* line 115, ../scss/layout/_navigation.scss */
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
     padding: 10px 0; }
 
-  /* line 135, ../scss/layout/_navigation.scss */
+  /* line 117, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon {
     margin-top: 10px; }
 
-  /* line 136, ../scss/layout/_navigation.scss */
+  /* line 118, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon i {
     color: #555; } }
 /* Sticky navi */
-/* line 141, ../scss/layout/_navigation.scss */
+/* line 123, ../scss/layout/_navigation.scss */
 .sticky {
   position: fixed;
   top: 0;
@@ -1073,30 +1055,30 @@ body {
   animation-duration: .5s;
   animation-timing-function: ease-out; }
 
-/* line 156, ../scss/layout/_navigation.scss */
+/* line 138, ../scss/layout/_navigation.scss */
 .sticky .main-nav {
   margin-top: 18px; }
 
-/* line 158, ../scss/layout/_navigation.scss */
+/* line 140, ../scss/layout/_navigation.scss */
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   padding: 10px 0;
   padding-top: 1rem;
   color: #000; }
 
-/* line 166, ../scss/layout/_navigation.scss */
+/* line 148, ../scss/layout/_navigation.scss */
 .sticky .main-nav li a:hover {
   border-bottom: 2px solid #000; }
 
-/* line 169, ../scss/layout/_navigation.scss */
+/* line 151, ../scss/layout/_navigation.scss */
 .logo-black {
   display: none; }
 
-/* line 170, ../scss/layout/_navigation.scss */
+/* line 152, ../scss/layout/_navigation.scss */
 .sticky .logo {
   display: none; }
 
-/* line 171, ../scss/layout/_navigation.scss */
+/* line 153, ../scss/layout/_navigation.scss */
 .sticky .logo-black {
   display: block;
   -webkit-filter: invert(1);

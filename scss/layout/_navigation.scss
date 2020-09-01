@@ -2,9 +2,7 @@
     float: right;
     list-style: none;
     margin-top: 55px;
-	@include respond (tab-land){
-		margin-right: 5rem;
-	}
+	margin-right: 10rem;
 
 }
 
@@ -76,23 +74,7 @@
     margin-top: 30px;
     cursor: pointer;
     display: none;
-	@include respond(tab-port) {
-	transform: translateX(17rem);
-	}
-	@include respond(phone) {
-	transform: translateX(0);
-	}
-		
-	@include respond (phonel){
-		
-		transform: translateX(20rem);
-		
-	}
-		@include respond (phonelc){
-		
-		transform: translateX(12rem);
-		
-	}
+	margin-right: 5rem;
 }
 
 .mobile-nav-icon i {
