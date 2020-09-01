@@ -12,6 +12,9 @@ body {
 	text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+	@include respond(phonel) {
+		margin-bottom: 3rem;
+	}
 	&__main{
 		display: block;
         font-size: 6rem;
@@ -24,6 +27,7 @@ body {
             letter-spacing: 1rem;
             font-family: 5rem;
         }
+
 	}
 	&__sub{
 		display: block;

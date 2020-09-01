@@ -34,6 +34,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == phone {
         @media only screen and (max-width: 37.5em) { @content };    //600px
     }
+	    @if $breakpoint == phonel {
+        @media only screen and (max-height: 420px) { @content };    //600px
+    }
+	
+	 @if $breakpoint == phonelc {
+        @media only screen and (max-height: 360px) { @content };    //600px
+    }
     @if $breakpoint == tab-port {
         @media only screen and (max-width: 56.25em) { @content };     //900px
     }

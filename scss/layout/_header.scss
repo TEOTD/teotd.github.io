@@ -15,7 +15,14 @@
 		
 		height: 95vh;
 
-        }
+    }
+	
+
+    @include respond(tab-land) {
+		
+		height: 96vh;
+
+    }
 	
 	&__logo-box{
 		position: absolute;
@@ -37,7 +44,9 @@
 		left:50%;
 		transform: translate(-50%,-50%);
 		text-align: center;
-		
+	@include respond(phonel) {
+		top:60%
+	}
 }
 	
 	
