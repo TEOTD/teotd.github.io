@@ -927,7 +927,7 @@ body {
   float: right;
   list-style: none;
   margin-top: 55px;
-  margin-right: 10rem; }
+  margin-right: 5rem; }
 
 /* line 9, ../scss/layout/_navigation.scss */
 .main-nav li {
@@ -952,16 +952,29 @@ body {
   border-bottom: 2px solid #fff; }
 
 /* Mobile navi */
+/* line 36, ../scss/layout/_navigation.scss */
+.mobile-nav-icon {
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin-right: 5rem;
+  margin-top: 5rem; }
+
+/* line 44, ../scss/layout/_navigation.scss */
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff; }
+
 @media only screen and (max-width: 37.5em) {
-  /* line 40, ../scss/layout/_navigation.scss */
+  /* line 53, ../scss/layout/_navigation.scss */
   .main-nav {
     display: none; }
 
-  /* line 41, ../scss/layout/_navigation.scss */
+  /* line 54, ../scss/layout/_navigation.scss */
   .mobile-nav-icon {
     display: inline-block; }
 
-  /* line 43, ../scss/layout/_navigation.scss */
+  /* line 56, ../scss/layout/_navigation.scss */
   .main-nav {
     float: left;
     margin-top: 30px;
@@ -969,11 +982,11 @@ body {
     text-align: center;
     padding-left: 7rem; }
 
-  /* line 51, ../scss/layout/_navigation.scss */
+  /* line 64, ../scss/layout/_navigation.scss */
   .main-nav li {
     display: block; }
 
-  /* line 55, ../scss/layout/_navigation.scss */
+  /* line 68, ../scss/layout/_navigation.scss */
   .main-nav li a:link,
   .main-nav li a:visited {
     display: block;
@@ -981,45 +994,32 @@ body {
     padding: 10px 0;
     font-size: 100%; }
 
-  /* line 63, ../scss/layout/_navigation.scss */
+  /* line 76, ../scss/layout/_navigation.scss */
   .sticky .main-nav {
     margin-top: 10px; }
 
-  /* line 65, ../scss/layout/_navigation.scss */
+  /* line 78, ../scss/layout/_navigation.scss */
   .sticky .main-nav li a:link,
   .sticky .main-nav li a:visited {
     padding: 10px 0; }
 
-  /* line 67, ../scss/layout/_navigation.scss */
+  /* line 80, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon {
     margin-top: 10px; }
 
-  /* line 68, ../scss/layout/_navigation.scss */
+  /* line 81, ../scss/layout/_navigation.scss */
   .sticky .mobile-nav-icon i {
     color: #555; } }
-/* line 72, ../scss/layout/_navigation.scss */
-.mobile-nav-icon {
-  float: right;
-  margin-top: 30px;
-  cursor: pointer;
-  display: none;
-  margin-right: 5rem; }
-
-/* line 80, ../scss/layout/_navigation.scss */
-.mobile-nav-icon i {
-  font-size: 200%;
-  color: #fff; }
-
 @media only screen and (max-width: 56.25em) {
-  /* line 90, ../scss/layout/_navigation.scss */
+  /* line 89, ../scss/layout/_navigation.scss */
   .main-nav {
     display: none; }
 
-  /* line 91, ../scss/layout/_navigation.scss */
+  /* line 90, ../scss/layout/_navigation.scss */
   .mobile-nav-icon {
     display: inline-block; }
 
-  /* line 93, ../scss/layout/_navigation.scss */
+  /* line 92, ../scss/layout/_navigation.scss */
   .main-nav {
     float: left;
     margin-top: 3rem;

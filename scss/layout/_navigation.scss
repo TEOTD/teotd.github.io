@@ -2,7 +2,7 @@
     float: right;
     list-style: none;
     margin-top: 55px;
-	margin-right: 10rem;
+	margin-right: 5rem;
 
 }
 
@@ -32,6 +32,19 @@
 
 
 /* Mobile navi */
+
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: none;
+	margin-right: 5rem;
+	margin-top: 5rem;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
 
 
 @include respond(phone) {
@@ -69,20 +82,6 @@
 	
 }
 
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-	margin-right: 5rem;
-}
-
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: #fff;
-}
-
-
 @include respond(tab-port) {
 	
 
@@ -96,6 +95,7 @@
 		text-align: center;
 		padding-left: 7rem;
     }
+	
     
     .main-nav li {
         display: block;
