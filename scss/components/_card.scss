@@ -61,18 +61,18 @@
         border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-grey-dark, $color-grey-dark-3), 
-            url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-black, $color-black), 
+            url(../img/nat-5.jpeg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-grey-dark, $color-grey-dark-3), 
-            url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-black, $color-black), 
+            url(../img/nat-6.jpeg);
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-grey-dark, $color-grey-dark-3), 
-            url(../img/nat-7.jpg);
+            url(../img/nat-7.webp);
         }
     }
 
@@ -109,6 +109,7 @@
 
     &__details {
         padding: 3rem;
+        color: rgba($color-grey-dark-3,1);
 
         ul {
             list-style: none;
