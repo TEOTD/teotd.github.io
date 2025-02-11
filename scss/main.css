@@ -617,7 +617,7 @@ body {
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
   transition: all 0.3s;
-  height: 45vh;
+  height: 50vh;
 }
 @media only screen and (max-width: 56.25em) {
   .feature-box {
@@ -774,53 +774,87 @@ body {
 
 .education {
   width: 75%;
-  margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 3px;
   padding: 6rem;
-  padding-left: 9rem;
   font-size: 1.6rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+  display: flex;
+  gap: 3rem;
 }
 @media only screen and (max-width: 56.25em) {
   .education {
-    width: 80%;
+    width: 90%;
     padding: 4rem;
-    padding-left: 7rem;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .education {
-    padding: 10rem;
+    width: 95%;
+    padding: 2rem;
+    margin-bottom: 2rem;
   }
 }
 .education__logo {
-  width: 15rem;
+  width: 20rem;
   height: 15rem;
-  float: left;
-  clip-path: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
-  transform: translateX(-3rem);
-  padding-left: 1rem;
-  margin-left: 3rem;
+  min-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .education__logo {
+    width: 15rem;
+    height: auto;
+    min-width: unset;
+  }
 }
 .education__img {
-  height: 75%;
-  width: 75%;
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
 }
 .education__img__vani {
-  transform: translateX(-4rem);
-  transform: translateY(0);
+  transform: scale(1.5, 1.5);
 }
-
-.vani {
-  height: 75%;
-  width: 75%;
+@media only screen and (max-width: 56.25em) {
+  .education__img__vani {
+    width: 90%;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .education__img__vani {
+    width: 95%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.education__content {
+  flex: 1;
+  padding: 0 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .education__content {
+    padding: 2rem 0;
+    text-align: center;
+  }
 }
 
 .edu_para {
   text-align: justify;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 37.5em) {
+  .edu_para {
+    text-align: left;
+  }
 }
 
 .footer {
@@ -1205,6 +1239,17 @@ body {
     padding: 10rem 0;
   }
 }
+.section-achievements {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/Back3.png");
+  background-size: cover;
+  position: relative;
+  padding: 15rem 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-achievements {
+    padding: 10rem 0;
+  }
+}
 
 .contact {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/Back2.jpg);
@@ -1226,12 +1271,16 @@ body {
 .contact__me {
   width: 50%;
   padding: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 @media only screen and (max-width: 75em) {
   .contact__me {
     width: 65%;
     padding: 2rem;
     margin: 0;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -1239,15 +1288,15 @@ body {
     width: 100%;
     padding: 2rem;
     margin: 0;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .contact__me {
     width: 100%;
-    padding: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
     margin: 0;
+    flex-direction: column;
   }
 }
 .contact__me__para {
@@ -1260,12 +1309,12 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .contact__me__para {
-    display: none;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .contact__me__para {
-    display: none;
+    width: 100%;
   }
 }
 .contact__me__logo {
