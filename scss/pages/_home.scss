@@ -48,6 +48,20 @@
     }
 		
 	}
+
+  &-experience{
+    background-image: linear-gradient(to right bottom ,
+            rgba($color-grey-light-1,1),rgba($color-grey-light-2,1));
+    background-size: cover;
+    position: relative;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+      padding: 10rem 0;
+    }
+
+  }
+
 &-contact__me{
 		padding: 15rem 0;
 	    background-image: linear-gradient(to right bottom ,
