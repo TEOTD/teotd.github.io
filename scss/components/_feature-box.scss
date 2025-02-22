@@ -6,20 +6,16 @@
 	border-radius: .3rem;
 	box-shadow: 0 1.5rem 4rem rgba($color-white,0.2);
 	transition: all .3s;
-	height: 60vh;
+	height: 50vh;
 	
 	@include respond(tab-port) {
         padding: 2rem;
     }
 	@include respond (phonel){
-		
 		height: 80vh;
-		
 	}
 		@include respond (phonelc){
-		
 		height: 80vh;
-		
 	}
 	
 	&:hover{
